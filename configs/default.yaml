@@ -1,0 +1,27 @@
+device: cuda
+data:
+  celeba_root: ../../datasets/celeba/extracted/celeba
+  # Cap for wall-clock; size gate uses full celeba root (D2).
+  max_images: 20000
+model:
+  image_size: 64
+  lr_scale: 4
+train:
+  protocol: full
+  seed: 42
+  batch_size: 32
+  num_workers: 4
+  epochs: 5
+  lr_g: 0.0002
+  lr_d: 0.0002
+  lambda_adv: 1.0
+  lambda_cls: 1.0
+  lambda_mrr: 10.0
+eval:
+  max_images: 2000
+  batch_size: 32
+paths:
+  checkpoint_dir: outputs/checkpoints/full
+  log_dir: outputs/logs/full
+  figure_dir: outputs/figures/full
+  pred_dir: outputs/predictions/full
