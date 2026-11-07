@@ -1,0 +1,9 @@
+# Bhattacharjee & Das, "D2SC-GAN: Dual Deep-Shallow Channeled Generative Adversarial
+# Network, for Resolving Low-Resolution Faces for Recognition in Classroom Scenarios",
+# IEEE TBIOM 2, 2020, doi:10.1109/TBIOM.2020.2983524.
+source: doi:10.1109/TBIOM.2020.2983524
+
+# Fill in from the paper's tables to enable test_published_values. The full text was
+# not available when this suite was written, so no values are recorded here.
+# Shape: {psnr: 0.0, ssim: 0.0}.
+published_values: null
