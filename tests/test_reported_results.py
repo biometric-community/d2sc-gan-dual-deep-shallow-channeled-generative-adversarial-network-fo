@@ -23,8 +23,6 @@ def test_generator_beats_plain_bicubic_ssim(report):
 
 
 def test_published_values(report, targets):
-    if targets["published_values"] is None:
-        pytest.skip("paper tables not recorded in tests/paper_targets.yaml")
     psnr, ssim = row(report, "D2SC-GAN")
     assert psnr == pytest.approx(targets["published_values"]["psnr"], abs=1.0)
     assert ssim == pytest.approx(targets["published_values"]["ssim"], abs=0.02)

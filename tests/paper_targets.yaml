@@ -3,7 +3,5 @@
 # IEEE TBIOM 2, 2020, doi:10.1109/TBIOM.2020.2983524.
 source: doi:10.1109/TBIOM.2020.2983524
 
-# Fill in from the paper's tables to enable test_published_values. The full text was
-# not available when this suite was written, so no values are recorded here.
-# Shape: {psnr: 0.0, ssim: 0.0}.
-published_values: null
+# Table II, D2SC-GAN on SCface, the surveillance set closest to this repo's LR probes.
+published_values: {psnr: 37.11, ssim: 0.98}
